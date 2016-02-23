@@ -12,8 +12,8 @@ describe('Config', function () {
     });
 
     it('after construction, 2 props are populated', function () {
-        assert(typeof(Config.units) != units);
-        assert(typeof(Config.ip) != ip);
+        assert(Config.units == units);
+        assert(Config.ip == ip);
     });
 
     it('has correct key types', function () {
